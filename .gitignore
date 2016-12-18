@@ -1,0 +1,14 @@
+WP_1/.htaccess
+WP_1/.htaccessのコピー
+WP_1/.ftpaccess
+WP_1/wp-configのコピー.php
+WP_1/wp-config.php
+WP_1/analyticstracking.php
+WP_1/wp-content/themes/node_modules/*
+WP_1/wp-content/plugins/*
+WP_1/wp-admin/*
+WP_1/wp-includes/*
+WP_1/wp-content/cache/*
+WP_1/wp-content/.idea/*
+WP_1/.idea/*
+WP_1/wp-content/uploads/*
