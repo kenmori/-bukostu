@@ -5,7 +5,8 @@ const extractCSS = new ExtractTextPlugin('css/style.css');
 
 module.exports = {
     entry: {
-        fourteen : './index.js'
+        fourteen : './index.js',
+        style: './style.js'
         },
     output: {
         path: path.join(__dirname, 'twentyfourteen/dist'),
@@ -18,7 +19,16 @@ module.exports = {
                 exclude: /node_modules/,
                 loader : 'babel'
             },
-            { test: /\.scss$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader!sass-loader'), },
+            {
+                test: /\.scss$/,
+                loader: ExtractTextPlugin.extract('style-loader', 'css-loader!sass-loader'),
+            },
+            {
+                test: /\.(jpe?g|png|gif|svg|ttf|eot)$/i,
+                loader: 'url-loader?limit=10000&name=img/[name].[ext]'
+
+            }
+
             // { test: /\.css$/, loaders : ['style', 'css?modules'] },
         ]
     },
