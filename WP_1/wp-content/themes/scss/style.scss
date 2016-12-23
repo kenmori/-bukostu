@@ -454,8 +454,12 @@ h3 {
 		width: 24.047619%;
 	}
 	.site-content {
+		margin-top: 20px;
 		margin-right: 22.047619%;
 	}
+}
+@media screen and (max-width: 1550px) {
+	margin-top: 60px;
 }
 
 @media screen and (min-width: 401px) {
