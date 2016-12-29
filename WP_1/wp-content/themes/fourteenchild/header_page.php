@@ -27,8 +27,6 @@
 	<link href="<?php bloginfo('template_directory'); ?>/images/favicon.png" rel="shortcut icon" />
 	<link rel="apple-touch-icon" href="http://kenjimorita.jp/wp-content/themes/twentyfourteen/images/apple-touch-icon.png" />
 	<?php wp_head(); ?>
-<!-- 	<link rel="stylesheet" href="http://kenjimorita.jp/wp-content/themes/twentyfourteen/css/snap.css">
- -->
 	<meta name="google-site-verification" content="aF7Nnl0otsSvBoLQc2c6ymTPu2K8bcv_292nRkpOUTA" />
 </head>
 

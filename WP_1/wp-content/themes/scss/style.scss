@@ -3,9 +3,9 @@
 //http://localhost/WP_1/wp-content/themes/twentyfourteen/style.css
 //http://localhost/WP_1/wp-content/themes/fourteenchild/style.css?ver=4.3.6
 
-@import "genericons";
-@import "vertical";
-@import "origin_style";
+@import "./genericons";
+@import "./vertical";
+@import "./original";
 
 
 
@@ -575,4 +575,7 @@ h3 {
 
 #archives-dropdown-2 {
 	-webkit-appearance: none;
+}
+#fafa{
+	background: #000;
 }

@@ -1,0 +1,119 @@
+.wp_rp_wrap .related_post_title {
+	font-size: 1rem;
+	clear: both;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+div {
+	&.wp_rp_content {
+		display: inline-block !important;
+		margin-top: 20px;
+	}
+	&.wp_rp_footer {
+		text-align: right !important;
+		overflow: hidden !important;
+		a {
+			display: inline-block !important;
+			color: #999 !important;
+			font-size: 11px !important;
+			text-decoration: none !important;
+			&.wp_rp_edit {
+				color: #fff !important;
+				font-size: 12px !important;
+				text-decoration: underline !important;
+				font-weight: bold !important;
+				background: #f79124 !important;
+				border-radius: 2px !important;
+				padding: 3px 6px;
+			}
+		}
+	}
+}
+
+ul.related_post {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	li {
+		position: relative !important;
+		display: inline-block !important;
+		vertical-align: top !important;
+		zoom: 1 !important;
+		*display: inline !important;
+		width: 100px !important;
+		margin: 10px 10px 10px 0px !important;
+		padding: 0 !important;
+		background: none !important;
+		a {
+			position: relative !important;
+			display: block;
+			font-size: 12px !important;
+			line-height: 1.5em !important;
+			text-decoration: none !important;
+			margin-bottom: 5px !important;
+			text-indent: 0 !important;
+		}
+		img {
+			display: block !important;
+			width: 100px !important;
+			height: 100px !important;
+			max-width: 100% !important;
+			margin: 0 !important;
+			padding: 0 !important;
+			background: none !important;
+			border: none !important;
+			border-radius: 3px !important;
+			box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2) !important;
+		}
+		a img.wp_rp_santa_hat {
+			display: none !important;
+		}
+		small {
+			font-size: 80%;
+		}
+		.wp_rp_category a {
+			display: inline !important;
+		}
+	}
+	margin: 0;
+}
+
+@media screen and (max-width: 480px) {
+	ul.related_post li {
+		display: inline-block !important;
+		width: 100px !important;
+		clear: both !important;
+		max-height: 12em;
+		overflow-y: hidden;
+		a {
+			&:nth-child(1) {
+				float: left !important;
+			}
+			&:nth-child(2) {
+				font-size: 14px !important;
+			}
+		}
+		img {
+			width: 100px !important;
+			height: 100px !important;
+		}
+	}
+}
+
+@media screen and (min-width: 481px) {
+	ul.related_post {
+		li a {
+			max-height: 9em;
+			overflow: hidden;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 2;
+		}
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (max-width: 400px) {}
