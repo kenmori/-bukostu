@@ -78,16 +78,35 @@ if (!is_admin()) {
 
 add_action('wp_enqueue_scripts', 'deregister_qjuery');
    function register_script(){  //登録の項目
+        wp_register_script( 'bundle', get_stylesheet_directory_uri() . '/dist/fourteen.bundle.js', false, '', true);
         wp_register_script( 'header_scroll', get_stylesheet_directory_uri() . '/js/header_scroll.js', false, '', true);
         }
     function add_script() {  // 装備の項目
         deregister_script();
         register_script();
+        wp_enqueue_script('bundle');
         wp_enqueue_script('header_scroll');
 
         }
     add_action('wp_enqueue_scripts', 'add_script');
 }
 
+
+//function my_styles() {
+//    wp_enqueue_style( 'bootstrap', get_bloginfo( 'stylesheet_directory') . '/dist/style.css', array(), null, 'all');
+//}
+//add_action( 'wp_enqueue_scripts', 'my_styles');
+
+
+if (!function_exists('remove_wp_open_sans')) :
+    function remove_wp_open_sans() {
+        wp_deregister_style( 'open-sans' );
+        wp_register_style( 'open-sans', false );
+    }
+    add_action( 'wp_enqueue_scripts', 'remove_wp_open_sans');
+
+    // Uncomment below to remove from admin
+    // add_action('admin_enqueue_scripts', 'remove_wp_open_sans');
+endif;
 
 ?>

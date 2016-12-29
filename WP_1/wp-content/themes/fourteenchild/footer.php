@@ -29,7 +29,7 @@
 	    window.onload = function() { setTimeout(scrollTo, 100, 0, 1); }
 	</script>
 
-    <script src="<?php echo get_template_directory_uri(); ?>/dist/fourteen.bundle.js"></script>
+
 
 	<?php wp_footer(); ?>
 </body>

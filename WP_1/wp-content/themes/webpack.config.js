@@ -9,7 +9,7 @@ module.exports = {
         style: './style.js'
         },
     output: {
-        path: path.join(__dirname, 'twentyfourteen/dist'),
+        path: path.join(__dirname, './dist'),
         filename: '[name].bundle.js'
     },
     module: {
